@@ -23,7 +23,7 @@ int explore(u64 to_explore)
     u64 vals[STACK_SIZE];
     u8 cnts[STACK_SIZE];
     vals[0] = to_explore;
-    cnts[0] = N - 1;
+    cnts[0] = N - 2;
     while (stack_size)
     {
         stack_size--;
@@ -66,6 +66,10 @@ u64 *generate_solutions(u64 *stack)
                 *stack++ = test0 | test1;
             }
         }
+    }
+    if ((N & 1) == 0)
+    {
+        u
     }
 }
 
